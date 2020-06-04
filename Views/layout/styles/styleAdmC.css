@@ -1,0 +1,439 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: #d142007e;
+    overflow: hidden;
+}
+
+svg{
+    margin-top: 10%;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    transition: filter 2s;
+}
+
+svg:hover{
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+nav{
+    display: table;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    margin-top: -15px;
+}
+
+#options{
+    margin-top: 10%;
+    display: block;
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+
+#bajaCinema #cinemas{
+    float: top;
+    margin: 0;
+    padding: 2px;
+    color: white;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+
+#bajaCinema #cinemas2{
+    float: top;
+    margin: 0;
+    padding: 2px;
+    color: white;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+
+header{
+    padding-top:8% ;
+    top: 0%;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(46, 2, 27);
+    -webkit-transition: background-color .5s;
+
+}
+
+.barra{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+.barraAbajo{
+    margin-top: 40.6%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.068);
+    color: white;
+    border: none;
+    border-bottom: solid 1px black;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    outline: none;
+
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.336);
+
+}
+
+.baja{
+    margin-top: 13%;
+    margin-left: 30%;
+    margin-bottom: 100%;
+    border-radius: 4px;
+    width: 65%;
+    height: 300px;
+    background-color: rgba(46, 2, 27, 0.952);
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.623));
+}
+
+.shows{
+    overflow-y: scroll;
+    margin-top: 8%;
+    margin-left: 30%;
+    margin-bottom: 100%;
+    border-radius: 4px;
+    width: 65%;
+    height: 425px;
+    background-color: rgba(46, 2, 27, 0.952);
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.623));
+    color: white;
+}
+
+.movies{
+    width: 100px;
+    float: right;
+    display: inline;
+}
+
+.desc{
+    float: right;
+    display: inline;
+    margin-top: 3.5%;
+    margin-right: 2%;
+}
+
+select, #date{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.191);
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+    line-height: 50px;
+    padding-top: 0; padding-bottom: 0;
+    margin-top: 20px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    border: 0 none !important;
+    outline: 0px none !important;
+    color: rgb(255, 255, 255);
+}
+
+option{
+    border: 0 none !important;
+    outline: 0px none !important;
+    color: rgb(0, 0, 0);
+}
+#date{
+    margin-bottom: 8%;
+}
+
+.buttonsShows{
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.buttonsShows button{
+    
+    margin-right: 30px;
+    display: block;
+    margin-top: 2%;
+}
+
+#individualShow{
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.desc p{
+    display: block;
+    text-align: right;
+}
+
+#titleShows{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.383);
+}
+
+.mod{
+    border-radius: 4px;
+    margin-left: 30%;
+    margin-top: 13%;
+    width:65%;
+    height: 300px;
+    background-color: rgba(46, 2, 27, 0.952);
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    transition: 10s;
+
+    float: left;
+}
+
+
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+    background: rgba(0, 0, 0, 0.308);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.alta{
+    border-radius: 4px;
+    margin-top: 9%;
+    width: 30%;
+    background-color: rgba(46, 2, 27, 0.952);
+    margin-left: 48%;
+    margin-bottom: 100%;
+    padding-top: 2%;
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.623));
+}
+
+.msg{
+    color: red;
+    position: absolute;
+    top: 5%;
+    left: 48%
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+input[placeholder="Alta cine"]:hover, input[placeholder="Modificar cine"]:hover,input[placeholder="Baja cine"]:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    transition: background-color linear .5s;
+    
+}
+
+
+.alta ::placeholder{
+    font-size:17px;
+    padding-left: 1px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+
+.submit{
+    margin-top: 3%;
+}
+
+#cinemas{
+    padding-top: .5%;
+    text-align: center;
+    width: 90%;
+    border-radius: 2px;
+    height: 25px;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.171);
+    transition: background-color .2s;
+}
+
+#cinemas2{
+    padding-top: .5%;
+    text-align: center;
+    width: 90%;
+    border-radius: 2px;
+    height: 25px;
+    margin-left: 5%;
+    background-color: rgba(255, 0, 0, 0.253);
+    transition: background-color .2s;
+}
+
+#cinemas:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+#cinemas2:hover{
+    background-color: rgba(255, 0, 0, 0.459);
+}
+
+img{
+    display: inline;
+    float: right;
+    width: 25px;
+    height: auto;
+}
+
+
+#modC{
+    margin-top: 20%;
+    margin-right: 20px;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+input[name="name"], input[name="address"],input[name="capacity"],input[name="ticket_value"]{
+    margin-top: 1%;
+    
+    
+    height: 35px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.267);
+    
+    cursor: text;
+    display: block;
+    transition: background-color .5s;
+    outline: none;
+}
+
+input[name="name"]:hover, input[name="address"]:hover,input[name="capacity"]:hover,input[name="numberOfCinemas"]:hover,input[name="priceDefault"]:hover{
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+input[placeholder="Type name of cinema"],input[placeholder="Type address"],input[placeholder="Number of cinemas"],input[placeholder="Capacity default for each cinema"],input[placeholder="Price default"]{
+    margin-top: 2%;
+    
+    padding-left: 5%;
+    height: 35px;
+    width: 100%;
+    background-color: rgba(197, 197, 197, 0.171);
+    cursor: text;
+    display: block;
+    transition: background-color .5s;
+    outline: none;
+}
+
+input[type="radio"]{
+    
+    margin-left: 25%;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#titleAdd{
+    color: rgba(255, 255, 255, 0.418);
+    margin-left: 28%;
+    margin-bottom: 6%;
+}
+
+#titleModify{
+    color: rgba(255, 255, 255, 0.418);
+    margin-left: 24%;
+    margin-top: 1%;
+    margin-bottom: 6%;
+    position: fixed;
+}
+
+#titleAddShow{
+    color: rgba(255, 255, 255, 0.418);
+    margin-left: 28%;
+    margin-bottom: 6%;
+}
+
+
+#titleBaja{
+    color: rgba(255, 255, 255, 0.418);
+    margin-left: 37.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+
+}
+
+input[placeholder="Type name of cinema"]:hover,input[placeholder="Type address"]:hover,input[placeholder="Type capacity"]:hover,input[placeholder="Type ticket value"]:hover{
+
+    background-color: rgba(197, 197, 197, 0.295);
+
+}
+
+
+.baja{
+    overflow-y: scroll;
+}
+
+.addShow{
+    border-radius: 3px;
+    margin-left: 48%;
+    margin-top: 13%;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(46, 2, 27, 0.952);
+}
+
+.addShowHour{
+    border-radius: 3px;
+    margin-left: 48%;
+    margin-top: 13%;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(46, 2, 27, 0.952);
+}
+
+
+.cinemas{
+    margin-top: 13%;
+    margin-left: 30%;
+    margin-bottom: 100%;
+    border-radius: 4px;
+    width: 65%;
+    height: 300px;
+    background-color: rgba(46, 2, 27, 0.952);
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.623));
+    overflow-y: scroll;
+}
+
+#titleCinemas{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.418);
+}
